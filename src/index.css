@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #dddddd;
+  }
+  .app {
+    text-align: center;
+  }
+  .header h1 ,
+  .details h1  {
+    margin: 40px 0px ;
+    color: #108ee2;
+    text-transform: capitalize;
+  }
+  form input {
+    padding: 10px 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(122,197,245);
+    background: linear-gradient(90deg, rgb(18, 157, 243) 0%, rgba(2,63,134,1) 100%);
+    color: #fff;
+  }
+  form input::placeholder {
+    color: rgb(245, 240, 240);
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+  }
+  .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      margin: 10px;
+      width: 300px;
+      height: 400px;
+  }
+  .card-body img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .card-body h3 {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 200;
+    align-self: flex-start;
+    padding:0px 20px;
+  }
+  .card-body a {
+    background: rgb(122,197,245);
+    background: linear-gradient(90deg, rgb(18, 157, 243) 0%, rgba(2,63,134,1) 100%);
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .paginationBttns {
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .paginationBttns a {
+    padding: 10px;
+    margin: 6px;
+    border-radius: 5px;
+    border: 1px solid #0d84d5;
+    color: #05529c;
+    cursor: pointer;
+  }
+  
+  .paginationBttns a:hover {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .paginationActive a {
+    color: white;
+    background-color: #2b2eff;
+  }
+  
+  .paginationDisabled a {
+    color: grey;
+    background-color: grey;
+  }
+  .character-container {
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .character-container img {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .character-container h3 {
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+  .character-container h3:last-of-type {
+    margin-bottom: 20px;
+  }
+  .character-container a {
+    background: rgb(122,197,245);
+    background: linear-gradient(90deg, rgb(18, 157, 243) 0%, rgba(2,63,134,1) 100%);
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  @media (max-width:500px) {
+    .header h1 , 
+    .details h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+    form input {
+      width: 200px;
+    }
+    .card-body img {
+      width: 100%;
+    }
+    .paginationBttns a {
+      margin: 1px;
+      padding: 7px;
+    }
+    .character-container img {
+      width: 80%;
+    }
+  }
