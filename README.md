@@ -16,3 +16,4 @@ patterns recommended by the documentation. Some of the tools used include: <br /
 * mange the data with context api 
 * create two pages (Home , Details ) .
 * use api to get data 
+* you could make search for characters . 
